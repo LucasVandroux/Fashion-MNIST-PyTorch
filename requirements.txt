@@ -1,0 +1,6 @@
+matplotlib==3.2.1
+numpy==1.18.2
+prefetch-generator==1.0.1
+scikit-learn==0.22.2.post1
+tensorboard==2.2.0
+tqdm==4.45.0
