@@ -2,12 +2,13 @@
 
 <details><summary>Table of Contents</summary><p>
 
-1. [Installation]()
-2. [Demo]()
-3. [Experiments]()
-4. [Results]()
-5. [Conclusion]()
-6. [Outlook]()
+1. [Installation](https://github.com/LucasVandroux/Fashion-MNIST-PyTorch#installation)
+2. [Usage](https://github.com/LucasVandroux/Fashion-MNIST-PyTorch#usage)
+3. [Demo](https://github.com/LucasVandroux/Fashion-MNIST-PyTorch#demo)
+4. [Experiments](https://github.com/LucasVandroux/Fashion-MNIST-PyTorch#experiments)
+5. [Results](https://github.com/LucasVandroux/Fashion-MNIST-PyTorch#results)
+6. [Conclusion](https://github.com/LucasVandroux/Fashion-MNIST-PyTorch#conclusion)
+7. [Outlook](https://github.com/LucasVandroux/Fashion-MNIST-PyTorch#outlook)
 
 </p></details><p></p>
 
@@ -49,7 +50,7 @@ To get more information about the `train_fashionMNIST.py` script, use the follow
 python train_fashionMNIST.py --help
 ```
 
-To use the Demo, see the [Demo]() section of this Readme.
+To use the Demo, see the [Demo](https://github.com/LucasVandroux/Fashion-MNIST-PyTorch#demo) section of this Readme.
 
 ### Repository Structure
 
@@ -92,7 +93,7 @@ If using a new Python environment, please have a look at the [PyTorch installati
 
 ### Launch the Demo
 
-Once the Demo is installed, download the [trained models]() and place them in the ` experiments``folder. The `experiments` folder might have to be created if it does not exist yet. Finally, launch the Demo with the following command (make sure the name of the model and the path for the weights are the correct ones):
+Once the Demo is installed, download the [trained models](https://github.com/LucasVandroux/Fashion-MNIST-PyTorch/releases/tag/v1) and place them in the ` experiments``folder. The `experiments` folder might have to be created if it does not exist yet. Finally, launch the Demo with the following command (make sure the name of the model and the path for the weights are the correct ones):
 
 ```
 python run_inference.py --model SimpleCNNModel --weights_path ../experiments/01_SimpleCNNModel/model_best.pth.tar --display_input --display_fps --device 0
@@ -166,12 +167,12 @@ The training of all the models was made on a p2.xlarge AWS machine using an Nvid
 
 ### Benchmark
 
-| Model          | Pre-trained                           | Preprocessing                                                             | #Trainable Parameters\* | Top-1 Accuracy\* | Inference Time\* | Link       |
-| -------------- | ------------------------------------- | ------------------------------------------------------------------------- | ----------------------- | ---------------- | ---------------- | ---------- |
-| SimpleCNNModel | No                                    | Random Horizontal Flip + Normalization                                    | 16'841'802              | 93.38            | 3.657ms          | [:link:]() |
-| SimpleCNNModel | No                                    | Random Cropping + Random Horizontal Flip + Normalization + Random Erasing | 16'841'802              | 93.51            | 3.737ms          | [:link:]() |
-| ResNet18       | [ImageNet](http://www.image-net.org/) | Random Horizontal Flip + Normalization                                    | 11'181'642              | 93.17            | 8.504ms          | [:link:]() |
-| ResNet18       | [ImageNet](http://www.image-net.org/) | Random Cropping + Random Horizontal Flip + Normalization + Random Erasing | 11'181'642              | 92.97            | 8.414ms          | [:link:]() |
+| Model          | Pre-trained                           | Preprocessing                                                             | #Trainable Parameters\* | Top-1 Accuracy\* | Inference Time\* | Link                                                                                                                      |
+| -------------- | ------------------------------------- | ------------------------------------------------------------------------- | ----------------------- | ---------------- | ---------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| SimpleCNNModel | No                                    | Random Horizontal Flip + Normalization                                    | 16'841'802              | 93.38            | 3.657ms          | [:link:](https://github.com/LucasVandroux/Fashion-MNIST-PyTorch/releases/download/v1/01_SimpleCNNModel.zip)               |
+| SimpleCNNModel | No                                    | Random Cropping + Random Horizontal Flip + Normalization + Random Erasing | 16'841'802              | 93.51            | 3.737ms          | [:link:](https://github.com/LucasVandroux/Fashion-MNIST-PyTorch/releases/download/v1/02_SimpleCNNModel_RandomErasing.zip) |
+| ResNet18       | [ImageNet](http://www.image-net.org/) | Random Horizontal Flip + Normalization                                    | 11'181'642              | 93.17            | 8.504ms          | [:link:](https://github.com/LucasVandroux/Fashion-MNIST-PyTorch/releases/download/v1/03_ResNet18.zip)                     |
+| ResNet18       | [ImageNet](http://www.image-net.org/) | Random Cropping + Random Horizontal Flip + Normalization + Random Erasing | 11'181'642              | 92.97            | 8.414ms          | [:link:](https://github.com/LucasVandroux/Fashion-MNIST-PyTorch/releases/download/v1/04_ResNet18_RandomErasing.zip)       |
 
 \***#Trainable Parameters**: Number of trainable parameters in the model.
 
