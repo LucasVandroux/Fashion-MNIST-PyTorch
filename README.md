@@ -70,13 +70,13 @@ In order to see how our models would perform on real data, we have created a sma
 
 _**Video 1**: The Demo correctly classifying a bag._
 
-![The Demo correctly classifying a t-shirt.](images/demo_ankleboot.gif "The Demo correctly classifying a t-shirt.")
+![The Demo correctly classifying an ankle boot.](images/demo_ankleboot.gif "The Demo correctly classifying an ankle boot.")
 
-_**Video 2**: The Demo correctly classifying a t-shirt._
+_**Video 2**: The Demo correctly classifying an ankle boot._
 
-![The Demo correctly classifying an ankle boot.](images/demo_tshirt.gif "The Demo correctly classifying an ankle boot.")
+![The Demo correctly classifying a t-shirt.](images/demo_tshirt.gif "The Demo correctly classifying a t-shirt.")
 
-_**Video 3**: The Demo correctly classifying an ankle boot._
+_**Video 3**: The Demo correctly classifying a t-shirt._
 
 ### Install the Demo
 
